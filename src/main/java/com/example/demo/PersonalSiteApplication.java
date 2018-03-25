@@ -9,4 +9,5 @@ public class PersonalSiteApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PersonalSiteApplication.class, args);
 	}
+
 }
