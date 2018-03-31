@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
-<html>
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 
    <!--- Basic Page Needs
@@ -30,8 +31,7 @@
    <script src="jquery.shuffleLetters.js"></script>
    <script src="js/modernizr.js"></script>
    <script src="js/index.js"></script>
-
-    
+   <script src="js/download.js"></script>
 
    <!-- Favicons
 	================================================== -->
@@ -47,8 +47,6 @@
 </script>
 
 </head>
-
-
 
 <body>
    <!-- Header
@@ -104,6 +102,20 @@
 
    </header> <!-- Header End -->
 
+   <!-- <script>
+            var secondsBeforeDownloading = 5;
+            var timerInterval = setInterval('setDownloadText()', 1000);
+            var setDownloadText = function() {
+                var label = document.getElementById('downloadLabel');
+                if (secondsBeforeDownloading === 0){
+                    downloadFile('./download/a');
+                    clearInterval(timerInterval);
+                } else {
+
+                    secondsBeforeDownloading--;
+                }
+            }
+    </script> -->
 
    <!-- About Section
    ================================================== -->
@@ -118,6 +130,8 @@
          </div>
 
          <div class="nine columns main-col">
+
+            <p th:text="'Hello, ' + ${name} + '!'" />
 
             <h2>About Me</h2>
 
@@ -145,7 +159,8 @@
 
                <div class="columns download">
                   <p>
-                     <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                     <a class="button"><i class="fa fa-download"></i>Download Resume</a>
+                     <button onclick="downloadFile('./download/a')">Download</button>
                   </p>
                </div>
 
