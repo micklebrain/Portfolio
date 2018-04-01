@@ -86,10 +86,10 @@
             <hr />
             <ul class="social">
                <li><a href="https://www.linkedin.com/in/nathannguyen2"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://www.facebook.com/nathan.nguyen.184"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>         
-               <li><a href="#"><i class="fa fa-twitter"></i></a></li>   
-               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="https://github.com/white-rose"><i class="fa fa-github"></i></a></li>
+               <li><a href="https://www.facebook.com/nathanthainguyen"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="https://www.instagram.com/nathan_da_myth"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                <li><a href="#"><i class="fa fa-skype"></i></a></li>
             </ul>
@@ -102,21 +102,6 @@
 
    </header> <!-- Header End -->
 
-   <!-- <script>
-            var secondsBeforeDownloading = 5;
-            var timerInterval = setInterval('setDownloadText()', 1000);
-            var setDownloadText = function() {
-                var label = document.getElementById('downloadLabel');
-                if (secondsBeforeDownloading === 0){
-                    downloadFile('./download/a');
-                    clearInterval(timerInterval);
-                } else {
-
-                    secondsBeforeDownloading--;
-                }
-            }
-    </script> -->
-
    <!-- About Section
    ================================================== -->
    <section id="about">
@@ -125,17 +110,15 @@
 
          <div class="three columns">
 
-            <img class="profile-pic"  src="./images/profilepic.jpg" alt="Opps"/>
+            <img class="profile-pic"  src="/static/images/profilepic.jpg" alt="Opps"/>
 
          </div>
 
          <div class="nine columns main-col">
 
-            <p th:text="'Hello, ' + ${name} + '!'" />
-
             <h2>About Me</h2>
 
-            <p> I am an experienced Java Developer, but also have a personal taste for Native IOS development.
+            <p> I am an enterprise Java Developer, but also have a personal taste for Native IOS development.
                 Working in many enterprise workspaces has forced practices such as test driven software development and modular code to be engrained as part of my deliverables.
                 I have learned to be versatile by switching work from infrastructure to front end and now backend services.
                 I have proven to deliver in a fast pace scrum environment as both a direct team member and consultant.
@@ -148,12 +131,12 @@
 
                   <h2>Contact Details</h2>
                   <p class="address">
-						   <span>Nathan Nguyen</span><br>
-						   <span>San Francisco<br>
+                     <span>Nathan Nguyen</span><br>
+                     <span>San Francisco<br>
                      </span><br>
-						   <span>(678)772-6306</span><br>
-                     <span>megooogle23@gmail.com</span>
-					   </p>
+                     <span>(678) 772-6306</span><br>
+                     <span>nathanthainguyen@gmail.com</span>
+                  </p>
 
                </div>
 
@@ -190,13 +173,52 @@
 
                <div class="twelve columns">
 
+                  <h3>Capgemini</h3>
+                  <p class="info">Software Consultant<span>&bull;</span> <em class="date">Apr 2017 - Jan 2018</em></p>
+
+               <p>
+
+                  Projects include developing error handling and logging frameworks in Mulesoft's anypoint platform for API's to plug in.
+
+                  Client project:
+                  Built out microservices for Wells Fargo using Spring MVC and Spring Boot that followed TDD & BDD test practices along with 12 factor principles. Implemented all validations and done testing. Microservice followed API and DDD architecture. Events defined by Avro schemas were stored on Kafka clusters. Services were deployed Nomad clusters and service discovery configuration was implemented through Consul.
+               </p>
+
+               </div>
+            </div>
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
                   <h3>Home Depot</h3>
-                  <p class="info">IT Intern <span>&bull;</span> <em class="date">Summer 2016</em></p>
+                  <p class="info">Software Engineer <span>&bull;</span> <em class="date">Aug 2016 - Apr 2017</em></p>
 
                   <p>
-                      Involved in project to create an Angular 2 reusable components framework: library for future projects to be able to import through an enterprise npm artifactory.
-                      The components were written using Microsoft typescript.
-                      Utilized the event-driven model and promises to add functionality for the components.
+
+                     Involved in developing a web application to make price change requests for thousands of product SKUs in stores. I completed user stories that addressed the complete stack from Angular 2 on the front end to Spring MVC & Spring Boot on the backend. TDD and BDD practices were enforce, by utilizing in IBM DB2 in-memory database, on all code pushed up.
+                     Selected projects include…
+                     Pricing Adjustment & Change Management web application
+                     • Developed micro-services deployed on PCF utilizing the Spring framework
+                     • Fetched thousands of SKU product records from Oracle and IBM tables
+                     • Utilized Java libraries to generate Excel documents downloaded from the application
+                     • Utilized Angular 2 extensive library to consume web services and create a component-base web application
+                  </p>
+               </div>
+
+            </div>
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Home Depot</h3>
+                  <p class="info">Software Engineer Intern<span>&bull;</span> <em class="date">May 2016 - Aug 2016</em></p>
+
+                  <p>
+                     Involved in project to create an Angular 2 reusable components framework: library for future projects to be able to import through an enterprise npm artifactory.
+                     The components were written using Microsoft's typescript.
+                     Utilized the event-driven model and promises to add functionality for the components.
                   </p>
 
                </div>
@@ -208,7 +230,7 @@
                <div class="twelve columns">
 
                   <h3>Georgia Pacific</h3>
-                  <p class="info">Web Architect <span>&bull;</span> <em class="date">March 2010 - Present</em></p>
+                  <p class="info">Web Architect <span>&bull;</span> <em class="date">Oct 2015 - May 2016</em></p>
 
                   <p>
                      Projects 
@@ -307,6 +329,17 @@
 
                <div class="twelve columns">
 
+                  <h3> University of San Francisco </h3>
+                  <p class="info"> </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
                   <h3> Georgia State University </h3>
                   <p class="info"> </p>
 
@@ -329,24 +362,21 @@
 
          <div class="nine columns main-col">
 
-            <p>Enterprise Java Engineer with taste for IOS Development
-            </p>
-
 				<div class="bars">
 
-<!-- 				   <ul class="skills">
-					   <li><span class="bar-expand JavaScript animation-element"></span><em>Javascript</em></li>
+<!-- 		    <ul class="skills">
+                  <li><span class="bar-expand JavaScript animation-element"></span><em>Javascript</em></li>
                   <li><span class="bar-expand Java animation-element"></span><em>Java</em></li>
-					    <li><span class="bar-expand CSharp animation-element"></span><em>CSharp</em></li>
-						<li><span class="bar-expand Swift animation-element"></span><em>Swift</em></li>
+                  <li><span class="bar-expand CSharp animation-element"></span><em>CSharp</em></li>
+                  <li><span class="bar-expand Swift animation-element"></span><em>Swift</em></li>
                   <li><span class="bar-expand HTML5CSS3 animation-element"></span><em>HTML5 + CSS3</em></li>
-					</ul> -->
+                 </ul> -->
 
                <ul class="skills">
-                  <li><span class="animation-element"></span><em>Javascript</em></li>
+                  <li><span class="animation-element"></span><em>Spring Framework</em></li>
                   <li><span class="animation-element"></span><em>Java</em></li>
-                  <li><span class="animation-element"></span><em>CSharp</em></li>
                   <li><span class="animation-element"></span><em>Swift</em></li>
+                  <li><span class="animation-element"></span><em>Maven & Gradle</em></li>
                   <li><span class="animation-element"></span><em>HTML5 + CSS3</em></li>
                </ul>
 
@@ -355,7 +385,6 @@
 			</div> <!-- main-col end -->
 
       </div> <!-- End skills -->
-
 
 
    </section> <!-- Resume Section End-->
@@ -603,16 +632,6 @@
          <li> Hack UGA 2015  </li>
       </ul>
 
-
-
-   </div>
-
-   <div class="row links">
-      <h2>Links </h2>
-      <ul>
-         <li> Github - https://github.com/white-rose </li>
-         <li> HackerRank - https://www.hackerrank.com/white_rose </li> 
-      </ul>
    </div>
 
    </section>
@@ -754,13 +773,6 @@
 
             </div>
 
-            <div class="ten columns">
-
-                  <p class="lead">I am currently looking for a internship for fall of 2016.
-                  </p>
-
-            </div>
-
          </div>
 
          <div class="row">
@@ -772,18 +784,18 @@
 					<fieldset>
 
                   <div>
-						   <label for="contactName">Name <span class="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactName" name="contactName">
+                     <label for="contactName">Name <span class="required">*</span></label>
+                     <input type="text" value="" size="35" id="contactName" name="contactName">
                   </div>
 
                   <div>
-						   <label for="contactEmail">Email <span class="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                     <label for="contactEmail">Email <span class="required">*</span></label>
+                     <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
                   </div>
 
                   <div>
-						   <label for="contactSubject">Subject</label>
-						   <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+                     <label for="contactSubject">Subject</label>
+                     <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
                   </div>
 
                   <div>
@@ -817,9 +829,7 @@
 
 					   <h4>Address and Phone</h4>
 					   <p class="address">
-						   Nathan Nguyen<br>
-						   444 Highland Avenue NE <br>
-						   Atlanta, GA 30312 US<br>
+                           San Francisco <br>
 						   <span>(678) 772-6306 </span>
 					   </p>
 
@@ -866,11 +876,11 @@
          <div class="twelve columns">
 
             <ul class="social-links">
-               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/nathannguyen2"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/white-rose"><i class="fa fa-github"></i></a></li>
+               <li><a href="https://www.facebook.com/nathanthainguyen"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="https://www.instagram.com/nathan_da_myth"><i class="fa fa-instagram"></i></a></li>
                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                <li><a href="#"><i class="fa fa-skype"></i></a></li>
             </ul>
