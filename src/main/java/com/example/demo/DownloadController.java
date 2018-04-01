@@ -13,12 +13,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
+import java.net.URI;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 @Controller
 @RequestMapping("/download")
 public class DownloadController {
 
-    private static final String FILE_PATH = "C:\\Users\\nathan.nguyen\\Code\\Portfolio\\src\\main\\resources\\templates\\NathanNguyenProfile.pdf";
+    private static final String FILE_PATH = "NathanNguyenProfile.pdf";
     private static final String APPLICATION_PDF = "application/pdf";
 
     @RequestMapping(value = "/a", method = RequestMethod.GET, produces = APPLICATION_PDF)
@@ -58,7 +61,7 @@ public class DownloadController {
     private File getFile() throws FileNotFoundException {
         File file = new File(FILE_PATH);
         if (!file.exists()){
-            throw new FileNotFoundException("file with path: " + FILE_PATH + " was not found.");
+            throw new FileNotFoundException("file with path: " + file.getAbsolutePath() + " was not found.");
         }
         return file;
     }
