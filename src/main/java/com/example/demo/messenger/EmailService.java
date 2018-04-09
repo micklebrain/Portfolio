@@ -7,6 +7,7 @@ import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.view.RedirectView;
 
 @Component
 @RestController
@@ -19,7 +20,7 @@ public class EmailService {
             value = "/send",
             method = RequestMethod.POST
     )
-    public void sendEmail(@ModelAttribute Email email) {
+    public RedirectView sendEmail(@ModelAttribute Email email) {
 
         SimpleMailMessage message = new SimpleMailMessage();
         message.setTo("nathanthainguyen@gmail.com");
@@ -28,6 +29,7 @@ public class EmailService {
 
         emailSender.send(message);
 
+        return new RedirectView("/");
     }
 
 }
