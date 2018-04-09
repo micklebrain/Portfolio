@@ -81,7 +81,7 @@
 
             <h1 class="responsive-headline" id="nameTitle"> Nathan Nguyen</h1>
   
-            <h3>Full stack mobile and web developer. Let's <a class="smoothscroll" href="#about">start scrolling</a>
+            <h3>Java developer and computer nerd. Let's <a class="smoothscroll" href="#about">start scrolling</a>
             and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
             <hr />
             <ul class="social">
@@ -416,10 +416,10 @@
                   <div class="item-wrap">
 
                      <a href="#modal-01" title="">
-                        <img alt="" src="images/portfolio/PieGraph.png">
+                        <img alt="" src="images/portfolio/SmallTalk.png">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
-          					      <h5>GradePie</h5>
+          					      <h5>SmallTalk</h5>
                               <p>IOS App</p>
           					   </div>
                         </div>
@@ -491,16 +491,16 @@
 
          <div id="modal-01" class="popup-modal mfp-hide">
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-coffee.jpg" alt="" />
+		      <img class="scale-with-grid" src="images/portfolio/modals/SmallTalk.png" alt="" />
 
 		      <div class="description-box">
-			      <h4>Coffee Cup</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
+			      <h4>SmallTalk</h4>
+			      <p>IOS Application to connect the user to other people in their proximity.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding, IOS Application</span>
 		      </div>
 
             <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
+               <a href="http://www.behance.net">https://github.com/white-rose/NearMeClient</a>
 		         <a class="popup-modal-dismiss">Close</a>
             </div>
 
@@ -790,7 +790,7 @@
             <div class="eight columns">
 
                <!-- form -->
-               <form action="" method="post" id="contactForm" name="contactForm">
+               <form action="#" method="post" id="contactForm" name="contactForm" th:action="@{/send}" th:object="${Email}">
 					<fieldset>
 
                   <div>
@@ -805,23 +805,25 @@
 
                   <div>
                      <label for="contactSubject">Subject</label>
-                     <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+                     <input type="text" value="" th:field="*{subject}" size="35" id="contactSubject" name="contactSubject">
                   </div>
 
                   <div>
                      <label for="contactMessage">Message <span class="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                     <input type="text" th:field="*{content}" id="contactMessage" name="contactMessage"/>
+                     <!--<textarea cols="50" rows="15" id="contactMessage" name="contactMessage" th:field="*{content}"></textarea>-->
                   </div>
 
                   <div>
-                     <button class="submit">Submit</button>
+                     <!--<button class="submit">Submit</button>-->
+                     <p><input type="submit" value="Submit" /> <!-- <input type="reset" value="Reset" /> --></p>
                      <span id="image-loader">
                         <img alt="" src="images/loader.gif">
                      </span>
                   </div>
 
 					</fieldset>
-				   </form> <!-- Form End -->
+               </form> <!-- Form End -->
 
                <!-- contact-warning -->
                <div id="message-warning"> Error boy</div>
@@ -844,31 +846,6 @@
 					   </p>
 
 				   </div>
-
-               <div class="widget widget_tweets">
-
-                  <h4 class="widget-title">Latest Tweets</h4>
-
-                  <ul id="twitter">
-                     <li>
-                        <span>
-                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum
-                        <a href="#">http://t.co/CGIrdxIlI3</a>
-                        </span>
-                        <b><a href="#">2 Days Ago</a></b>
-                     </li>
-                     <li>
-                        <span>
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                        eaque ipsa quae ab illo inventore veritatis et quasi
-                        <a href="#">http://t.co/CGIrdxIlI3</a>
-                        </span>
-                        <b><a href="#">3 Days Ago</a></b>
-                     </li>
-                  </ul>
-
-		         </div>
 
             </aside>
 
