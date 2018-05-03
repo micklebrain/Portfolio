@@ -1,4 +1,4 @@
-package com.example.demo.messenger;
+package com.example.demo.email;
 
 import com.example.demo.model.Email;
 
