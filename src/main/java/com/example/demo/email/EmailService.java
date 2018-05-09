@@ -14,6 +14,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+/*
 @Component
 @RestController
 public class EmailService {
@@ -53,3 +54,4 @@ public class EmailService {
     }
 
 }
+*/

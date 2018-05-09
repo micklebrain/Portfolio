@@ -1,25 +1,12 @@
 package com.example.demo;
 
-import com.example.demo.email.EmailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 
-import javax.sql.DataSource;
-
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.sql.Statement;
-
 @Component
 public class Demo implements CommandLineRunner {
-
-    @Autowired
-    private EmailService emailService;
-
-    @Autowired
-    DataSource dataSource;
 
     @Autowired
     private Environment env;

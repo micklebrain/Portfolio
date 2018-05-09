@@ -9,7 +9,7 @@ import org.springframework.context.annotation.PropertySource;
 
 import javax.sql.DataSource;
 
-@Configuration
+//@Configuration
 public class PostgresConfig {
 
     @Configuration
