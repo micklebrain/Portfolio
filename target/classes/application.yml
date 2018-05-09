@@ -16,6 +16,3 @@
 #    protocol: smtp
 #    test-connection: false
 #
-#sendgrid:
-#  username: ${SENDGRID_USERNAME}
-#  password: ${SENDGRID_PASSWORD}
