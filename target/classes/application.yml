@@ -1,0 +1,21 @@
+# application.yml
+
+#spring:
+#  mail:
+#    default-encoding: UTF-8
+#    host: smtp.gmail.com
+#    username: nathanthainguyen@gmail.com
+#    password: ${EMAIL_PASSWORD}
+#    port: 587
+#    properties:
+#      mail:
+#        smtp:
+#          auth: true
+#          starttls:
+#            enable: true
+#    protocol: smtp
+#    test-connection: false
+#
+#sendgrid:
+#  username: ${SENDGRID_USERNAME}
+#  password: ${SENDGRID_PASSWORD}

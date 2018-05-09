@@ -30,6 +30,7 @@ public class EmailService {
     )
     public RedirectView sendEmail(@ModelAttribute Email email) {
 
+        //Send Email
 //        SimpleMailMessage message = new SimpleMailMessage();
 //        message.setTo("nathanthainguyen@gmail.com");
 //        message.setSubject(email.getSubject());
@@ -43,6 +44,7 @@ public class EmailService {
             String msgSQL = "insert into messages (senderemail, subject, content) " +
                     "values ('" + email.getFromRecipient() + "','" + email.getSubject() + "', '" + email.getContent() + "')";
             msgStatement.execute(msgSQL);
+            connection.close();
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
