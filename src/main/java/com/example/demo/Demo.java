@@ -11,7 +11,6 @@ public class Demo implements CommandLineRunner {
     @Autowired
     private Environment env;
 
-
 //    @Bean
 //    public JavaMailSender getJavaMailSender() {
 //        final String host = "smtp.gmail.com";

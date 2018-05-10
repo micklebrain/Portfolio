@@ -1,6 +1,5 @@
 package com.example.demo.email;
 
-import com.example.demo.model.Email;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.ModelAttribute;

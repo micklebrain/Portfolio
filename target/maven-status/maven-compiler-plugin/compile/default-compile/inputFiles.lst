@@ -1,12 +1,13 @@
 /Users/nathannguyen/Documents/Code/Portfolio/src/main/java/com/example/demo/Postgres/MessagesService.java
 /Users/nathannguyen/Documents/Code/Portfolio/src/main/java/com/example/demo/Tester.java
 /Users/nathannguyen/Documents/Code/Portfolio/src/main/java/com/example/demo/DownloadController.java
-/Users/nathannguyen/Documents/Code/Portfolio/src/main/java/com/example/demo/messenger/messengerClient.java
 /Users/nathannguyen/Documents/Code/Portfolio/src/main/java/com/example/demo/model/EmailUser.java
 /Users/nathannguyen/Documents/Code/Portfolio/src/main/java/com/example/demo/Postgres/MessagesController.java
 /Users/nathannguyen/Documents/Code/Portfolio/src/main/java/com/example/demo/email/MessengerController.java
+/Users/nathannguyen/Documents/Code/Portfolio/src/main/java/com/example/demo/messenger/EmailService.java
 /Users/nathannguyen/Documents/Code/Portfolio/src/main/java/com/example/demo/PostgresConfig.java
 /Users/nathannguyen/Documents/Code/Portfolio/src/main/java/com/example/demo/Postgres/Messages.java
+/Users/nathannguyen/Documents/Code/Portfolio/src/main/java/com/example/demo/messenger/MessengerSevice.java
 /Users/nathannguyen/Documents/Code/Portfolio/src/main/java/com/example/demo/PersonalSiteApplication.java
 /Users/nathannguyen/Documents/Code/Portfolio/src/main/java/com/example/demo/HomeController.java
 /Users/nathannguyen/Documents/Code/Portfolio/src/main/java/com/example/demo/email/EmailService.java

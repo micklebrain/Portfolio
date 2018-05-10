@@ -2,13 +2,12 @@ com/example/demo/PersonalSiteApplication.class
 com/example/demo/PostgresConfig$DatabaseConfig.class
 com/example/demo/HomeController.class
 com/example/demo/Postgres/MessagesController.class
-com/example/demo/email/MessengerController.class
+com/example/demo/messenger/EmailService.class
 com/example/demo/Demo.class
 com/example/demo/model/User.class
-com/example/demo/email/EmailService.class
+com/example/demo/messenger/MessengerSevice.class
 com/example/demo/model/Email.class
 com/example/demo/PostgresConfig.class
 com/example/demo/Tester.class
 com/example/demo/DownloadController.class
 com/example/demo/model/EmailUser.class
-com/example/demo/messenger/messengerClient.class
