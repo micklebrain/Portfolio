@@ -8,6 +8,5 @@ com/example/demo/model/User.class
 com/example/demo/messenger/MessengerSevice.class
 com/example/demo/model/Email.class
 com/example/demo/PostgresConfig.class
-com/example/demo/Tester.class
 com/example/demo/DownloadController.class
 com/example/demo/model/EmailUser.class
