@@ -1,10 +1,5 @@
 package com.example.demo;
 
-import org.springframework.core.io.FileSystemResource;
-import org.springframework.core.io.Resource;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -32,28 +27,28 @@ public class DownloadController {
         FileCopyUtils.copy(in, response.getOutputStream());
     }
 
-    @RequestMapping(value = "/b", method = RequestMethod.GET, produces = APPLICATION_PDF)
-    public @ResponseBody HttpEntity<byte[]> downloadB() throws IOException {
-        File file = getFile();
-        byte[] document = FileCopyUtils.copyToByteArray(file);
-
-        HttpHeaders header = new HttpHeaders();
-        header.setContentType(new MediaType("application", "pdf"));
-        header.set("Content-Disposition", "inline; filename=" + file.getName());
-        header.setContentLength(document.length);
-
-        return new HttpEntity<byte[]>(document, header);
-    }
-
-    @RequestMapping(value = "/c", method = RequestMethod.GET, produces = APPLICATION_PDF)
-    public @ResponseBody
-    Resource downloadC(HttpServletResponse response) throws FileNotFoundException {
-        File file = getFile();
-        response.setContentType(APPLICATION_PDF);
-        response.setHeader("Content-Disposition", "inline; filename=" + file.getName());
-        response.setHeader("Content-Length", String.valueOf(file.length()));
-        return new FileSystemResource(file);
-    }
+//    @RequestMapping(value = "/b", method = RequestMethod.GET, produces = APPLICATION_PDF)
+//    public @ResponseBody HttpEntity<byte[]> downloadB() throws IOException {
+//        File file = getFile();
+//        byte[] document = FileCopyUtils.copyToByteArray(file);
+//
+//        HttpHeaders header = new HttpHeaders();
+//        header.setContentType(new MediaType("application", "pdf"));
+//        header.set("Content-Disposition", "inline; filename=" + file.getName());
+//        header.setContentLength(document.length);
+//
+//        return new HttpEntity<byte[]>(document, header);
+//    }
+//
+//    @RequestMapping(value = "/c", method = RequestMethod.GET, produces = APPLICATION_PDF)
+//    public @ResponseBody
+//    Resource downloadC(HttpServletResponse response) throws FileNotFoundException {
+//        File file = getFile();
+//        response.setContentType(APPLICATION_PDF);
+//        response.setHeader("Content-Disposition", "inline; filename=" + file.getName());
+//        response.setHeader("Content-Length", String.valueOf(file.length()));
+//        return new FileSystemResource(file);
+//    }
 
     private File getFile() throws FileNotFoundException {
         File file = new File(FILE_PATH);

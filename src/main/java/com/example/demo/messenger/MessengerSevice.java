@@ -18,9 +18,6 @@ import java.sql.Statement;
 @RestController
 public class MessengerSevice {
 
-    //    @Autowired
-//    public JavaMailSender emailSender;
-
     @Autowired
     DataSource dataSource;
 
@@ -28,15 +25,7 @@ public class MessengerSevice {
             value = "/send",
             method = RequestMethod.POST
     )
-    public RedirectView sendEmail(@ModelAttribute Email email) {
-
-        //Send Email
-//        SimpleMailMessage message = new SimpleMailMessage();
-//        message.setTo("nathanthainguyen@gmail.com");
-//        message.setSubject(email.getSubject());
-//        message.setText(email.getContent());
-//
-//        emailSender.send(message);
+    public RedirectView sendMessage (@ModelAttribute Email email) {
 
         try {
             Connection connection = dataSource.getConnection();

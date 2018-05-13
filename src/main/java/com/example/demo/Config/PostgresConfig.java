@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.Config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
