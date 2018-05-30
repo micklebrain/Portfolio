@@ -325,41 +325,43 @@ ul#nav li.current a { color: #F06000; }
    border-radius: 3px 0 0 3px;
 }
 
-.all {
-    width: 80%;
-    -moz-animation: photoshop 2s ease;
-    -webkit-animation: photoshop 2s ease;
-}
 
-.JavaScript {
+.all {
+     width: 50%;
+     -moz-animation: photoshop 2s ease;
+     -webkit-animation: photoshop 2s ease;
+ }
+
+
+#SpringFramework {
     width: 80%;
     -moz-animation: photoshop 2s ease;
     -webkit-animation: photoshop 2s ease;
 }
-.Java {
-    width: 70%;
+#NativeIOS {
+    width: 65%;
     -moz-animation: illustrator 2s ease;
     -webkit-animation: illustrator 2s ease;
 }
-.CSharp {
-    width: 60%;
+#Microservices {
+    width: 75%;
     -moz-animation: css 2s ease;
     -webkit-animation: css 2s ease;
 }
-.Swift {
-    width: 90%;
+#CloudNative {
+    width: 70%;
     -moz-animation: css 2s ease;
     -webkit-animation: css 2s ease;
 }
-.HTML5CSS3 {
-    width: 90%;
+#WebDevelopment {
+    width: 75%;
     -moz-animation: html5 2s ease;
     -webkit-animation: html5 2s ease;
 }
 
 @-moz-keyframes all {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 1000%;  }
 }
 
 @-moz-keyframes photoshop {
